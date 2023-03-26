@@ -1,0 +1,23 @@
+:root{
+    --bg-color:#000;
+    border: rgb(129, 214, 250);
+    color: bisque;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+html{
+    font-size: 68%;
+}
+body{
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+}

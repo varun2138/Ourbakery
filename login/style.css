@@ -1,0 +1,457 @@
+:root {
+    --main-color: #fffccc;
+    --border: #f3a836;
+    --color: #2e2c2c;
+    --background: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-transform: capitalize;
+
+}
+
+html {
+    font-size: 66%;
+    
+
+}
+
+
+body {
+    background: url(bg.jpg) no-repeat center center fixed; 
+    background-size: cover;
+   
+}
+
+.header {
+    background: var(--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+
+
+}
+.header .navbar i{
+    color: #fff;
+    font-size: 1rem;
+    
+}
+ 
+
+.header .navbar a {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 1rem;
+   
+
+}
+
+.header .navbar a:hover {
+    border-bottom: 0.1rem solid var(--border);
+    padding-bottom: 0.5rem;
+    color: var(--main-color);
+}
+
+.header .icons div {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+.header .icons div .fa-user{
+    color: var(--main-color);
+    font-size: 2.4rem;
+    margin-right: 1rem;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 31%;
+    right: 14%;
+    background: #fff;
+
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.2s ease-in-out;
+
+
+}
+
+.header .search-form.active {
+    transform: scaleX(1);
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+
+}
+
+.header .search-form label {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+.header .search-form label:hover{
+    color: var(--border);
+}
+ 
+.container{
+    width: 30rem;
+    background:var(--background);
+    
+  
+    border-radius: 2rem;
+    border-bottom:2px solid cornsilk;
+    border-right: 2px solid cornsilk;
+     
+        margin: 10% 14% 0;
+    
+      
+      box-shadow: 2rem 1rem 2rem #000;
+    padding: 3rem;
+    height: 40rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.4s ease-in-out;
+    
+    
+    text-align: center;
+}
+.container.active{
+    transform: scaleY(1);
+}
+.container h1{
+    margin: 1rem;
+    margin-top: auto;
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    color: #fff;
+    
+}
+.container form .box{
+    background: transparent;
+    margin: 1rem 0;
+    border: none;
+   
+    text-align: center;
+}
+.container form .box i{
+    
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    color:rgb(94, 225, 47);
+}
+.container form  input{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    width: 60%;
+    cursor: pointer;
+     
+    color: #ccc;
+
+    border-bottom: 4px solid rgb(17, 167, 180);
+   
+    border-image: linear-gradient(to right,rgb(4, 99, 121),cornsilk)1;
+    
+    font-size: 1.3rem;
+    
+    background: none;
+    outline: none;
+}
+.container form  input::placeholder{
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+ 
+
+.container form button {
+    border: 2px solid #000;
+    border-radius: 1rem;
+    border: 2px solid  #d3ad7f;
+    
+     text-transform: uppercase;
+     cursor: pointer;
+    background: #d3ad7f;
+    color:  #010103;
+    padding: 0.8rem 3rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+transition: 0.2s ease;
+}
+.container form button:hover{
+    color: #d3ad7f;
+    background: var(--background);
+    letter-spacing: 0.2rem;
+    box-shadow: 0.4rem 0.2rem 2rem #d3ad7f;
+}
+.container form h3{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+   
+}
+.container form h3 a{
+    color:var(--main-color);
+    font-size: 1.8rem;
+    padding-bottom: 0.6rem ;
+    transition: 0.2s ease;
+    font-weight: 700;
+}
+.container form h3 a:hover{
+    color: rgb(231, 248, 249);
+    border-bottom: 2px solid var(--main-color);
+}
+.container form h3 i{
+    color: rgb(161, 255, 247);
+    padding: 0 1rem;
+} 
+   .con{
+    display:flex;  
+    
+    
+   }
+
+   .box-container{
+    width: 35rem;
+    background:var(--background);
+    margin: 8% 4% 0;
+   
+  text-align: center;
+    border-radius: 2rem;
+    border-bottom:2px solid cornsilk;
+    border-right: 2px solid cornsilk;
+     
+     
+    
+      
+      box-shadow: 2rem 1rem 2rem #000;
+    padding: 3rem  ;
+    height: 40rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.4s ease-in-out;
+   }
+   .box-container.active{
+    transform: scaleY(1);
+   }
+   .box-container h1{
+    margin: 1rem;
+     
+     
+    margin-top: auto;
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    
+    color: #fff;
+    
+}
+.box-container form .box{
+    background: transparent;
+    margin: 1rem 0;
+    border: none;
+   
+    text-align: center;
+}
+.box-container form .box i{
+    
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    color:rgb(94, 225, 47);
+}
+.box-container form  input{
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+    width: 70%;
+    cursor: pointer;
+     
+    color: #ccc;
+
+    border-bottom: 4px solid rgb(17, 167, 180);
+   
+    border-image: linear-gradient(to right,rgb(4, 99, 121),cornsilk)1;
+    
+    font-size: 1.3rem;
+    
+    background: none;
+    outline: none;
+}
+.box-container form  input::placeholder{
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+ 
+
+.box-container form button {
+    border: 2px solid #000;
+    border-radius: 1rem;
+    border: 2px solid  #d3ad7f;
+    
+     text-transform: uppercase;
+     cursor: pointer;
+    background: #d3ad7f;
+    color:  #010103;
+    padding: 0.4rem 3rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+transition: 0.2s ease;
+}
+.box-container form button:hover{
+    color: #d3ad7f;
+    background: var(--background);
+    letter-spacing: 0.2rem;
+    box-shadow: 0.4rem 0.2rem 2rem #d3ad7f;
+}
+.box-container form h3{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+   
+}
+.box-container form h3 a{
+    color:var(--main-color);
+    font-size: 1.8rem;
+    padding-bottom: 0.6rem ;
+    transition: 0.2s ease;
+    font-weight: 700;
+}
+.box-container form h3 a:hover{
+    color: rgb(231, 248, 249);
+    border-bottom: 2px solid var(--main-color);
+}
+.box-container form h3 i{
+    color: rgb(161, 255, 247);
+    padding: 0 1rem;
+} 
+
+
+
+/* Media Queries */
+
+
+@media (max-width:720px){
+   html{
+    font-size: 55%;
+   }
+    
+    #menu-btn{
+        display: inline-block;
+    }
+    .header  .navbar{
+        position: absolute;
+        top:100%;right: -100%;
+        background:rgb(17, 16, 16);
+        width: 26rem;
+        height:  26rem;
+
+    }
+    .header .navbar.active{
+ right: 0;
+    }
+    .header .navbar a{
+        display: block;
+        color: var(--main-color);
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem 0.5rem;
+        transition: 0.2s ease-in;
+        
+
+    }
+    .header .navbar a:hover{
+        border-bottom:  0.1rem solid rgb(61, 141, 239);
+        color: rgb(14, 71, 164);
+    }
+    .container{
+        margin: 30% 13%  0;    
+                  
+        
+    }
+    .box-container{
+        margin: 30% 13% 0 ;
+    }
+    .container h1{
+        font-size: 3rem;
+    }
+    .container form h3 a{
+        font-size: 2.2rem;
+    }
+
+
+
+}
+
+
+@media (max-width:1220px) {
+    html{
+        font-size: 58%;
+    }
+    .header .search-form {
+        top: 115%;
+        right: 10%;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    .header .search-form.active {
+        transform: scaleY(1);
+        }
+
+}
+ 
+
+@media (max-width:450px){
+    html{
+        font-size: 40%;
+    }
+    .container{
+   margin: 50% 10% 0;
+    }
+    .box-container{
+        margin: 50% 10% 0;
+    }
+}
